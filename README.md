@@ -1,10 +1,10 @@
 # Ikra
-Project  
+Project  :
 
 SPRING API: 
 
-Spring boot
-Spring Data Mongodb
+Spring boot ,
+Spring Data Mongodb ,
 Spring Security
 
 UI:

@@ -1,0 +1,94 @@
+<div class="demo-container" mdl-shadow="2">
+   <mdl-layout mdl-layout-fixed-header mdl-layout-header-seamed>
+     
+      <mdl-layout-header>
+         <mdl-layout-header-row *ngIf="translate.currentLang === 'ar'">
+            <div class="translation">
+                <a class="mdl-navigation__link" (click)="ChangeLanguage('ar')">العربية</a>
+                <a class="mdl-navigation__link" (click)="ChangeLanguage('fr')">Français</a>
+                <a class="mdl-navigation__link" (click)="ChangeLanguage('en')">English</a>
+            </div>
+                <button mdl-button mdl-button-type="raised" mdl-colored="accent" mdl-ripple>
+                    {{ 'MENU.SignUp' | translate }}
+            </button>
+             <button mdl-button mdl-button-type="raised" mdl-colored="accent" mdl-ripple style="margin:3px;">
+                   {{ 'MENU.SignIn' | translate }}
+            </button>
+            <mdl-layout-spacer></mdl-layout-spacer>
+            <nav class="mdl-navigation mdl-layout--large-screen-only">
+               <a class="mdl-navigation__link" [routerLink]="['/events']">{{ 'MENU.Events' | translate }}</a>
+               <a class="mdl-navigation__link" [routerLink]="['/path']">{{ 'MENU.Path' | translate }}</a>
+               <a class="mdl-navigation__link" [routerLink]="['/courses']">{{ 'MENU.Courses' | translate }}</a>
+               <a class="mdl-navigation__link" [routerLink]="['/']">{{ 'MENU.Home' | translate }}</a>
+            </nav>
+            <mdl-layout-title >
+              <a class="title" [routerLink]="['/']">{{ 'MENU.TITLE' | translate }}</a>
+              </mdl-layout-title>
+            
+            <img src="app/assets/img/photo.png" width="3%">
+            <!-- Navigation. We hide it in small screens. -->
+         </mdl-layout-header-row>
+         
+         <mdl-layout-header-row *ngIf="translate.currentLang === 'fr' || translate.currentLang === 'en'">
+            <img src="app/assets/img/photo.png" width="3%">
+            <mdl-layout-title style="margin-left:0;margin-right:3%;">
+              <a class="title" [routerLink]="['/']">{{ 'MENU.TITLE' | translate }}</a>
+              </mdl-layout-title>
+            <nav class="mdl-navigation mdl-layout--large-screen-only">
+               <a class="mdl-navigation__link" [routerLink]="['/']">{{ 'MENU.Home' | translate }}</a>
+               <a class="mdl-navigation__link" [routerLink]="['/courses']">{{ 'MENU.Courses' | translate }}</a>
+               <a class="mdl-navigation__link" [routerLink]="['/path']">{{ 'MENU.Path' | translate }}</a>
+               <a class="mdl-navigation__link" [routerLink]="['/events']">{{ 'MENU.Events' | translate }}</a>
+            </nav>
+            <mdl-layout-spacer></mdl-layout-spacer>
+            <div >
+            <div class="translation">
+                <a class="mdl-navigation__link" (click)="ChangeLanguage('ar')">العربية</a>
+                <a class="mdl-navigation__link" (click)="ChangeLanguage('fr')">Français</a>
+                <a class="mdl-navigation__link" (click)="ChangeLanguage('en')">English</a>
+            </div>
+            <div class="SignButtons">
+                <button mdl-button mdl-button-type="raised" mdl-colored="accent" mdl-ripple>
+                    {{ 'MENU.SignUp' | translate }}
+            </button>
+             <button mdl-button mdl-button-type="raised" mdl-colored="accent" mdl-ripple style="margin:3px;">
+                   {{ 'MENU.SignIn' | translate }}
+            </button>
+            </div>
+            </div>
+            <!-- Navigation. We hide it in small screens. -->
+         </mdl-layout-header-row>
+      </mdl-layout-header>
+      
+      <mdl-layout-content>
+
+
+<ul class='social'>
+  <li>
+    <a class="fa fa-facebook" href="https://www.facebook.com/RespoSoft-1826619064241321/">    
+      <span>Facebook</span>
+    </a> 
+  </li>
+    <li>
+    <a class="fa fa-linkedin" href="https://www.linkedin.com/company/10882790?trk=tyah&trkInfo=clickedVertical%3Acompany%2CclickedEntityId%3A10882790%2Cidx%3A1-1-1%2CtarId%3A1469968824208%2Ctas%3Aresposoft">    
+      <span>LinkedIn</span>
+    </a> 
+  </li>
+  
+  <li>
+    <a class="fa fa-tumblr" href="">
+      <span>Tumblr</span>
+    </a>
+  </li>
+  
+  <li>
+    <a class="fa fa-google-plus" href="#">
+    <span>Google Plus</span>
+    </a> 
+  </li>
+  
+</ul>
+      <router-outlet></router-outlet>
+      </mdl-layout-content>
+   </mdl-layout>
+</div>

@@ -1,0 +1,68 @@
+<div class="mdl-grid">
+                <div class="mdl-cell mdl-cell--2-col"></div>
+                <div class="mdl-cell mdl-cell--8-col">
+                      <img src="app/assets/img/man.png" width="30%">
+                     <h1>{{listFilter}}</h1>
+               </div>
+                <div class="mdl-cell mdl-cell--2-col"></div>
+</div>
+<div class="mdl-grid" style="text-align:right">
+  <div class="mdl-cell mdl-cell--3-col">
+ <mdl-card class="demo-card-square" mdl-shadow="2" style="width:100%">
+    <mdl-card-title mdl-card-expand>
+      <h2 mdl-card-title-text>الدروس</h2>
+    </mdl-card-title>
+    <mdl-card-supporting-text>
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+      Aenan convallis.
+    </mdl-card-supporting-text>
+  </mdl-card>
+  </div>
+  <div class="mdl-cell mdl-cell--9-col">
+<mdl-card class="demo-card-square" mdl-shadow="2" style="width:100%">
+      <br><br>
+    <mdl-card-title mdl-card-expand>
+      <h2 mdl-card-title-text >تعريف الموقع</h2>
+    </mdl-card-title>
+    <mdl-card-supporting-text mdl-card-border>
+ 
+
+            <div class='has-error' *ngIf='errorMessage'>{{errorMessage}}</div>
+
+            <table class='table' *ngIf='students && students.length'>
+                <thead>
+                    <tr>
+                        <th>id</th>
+                        <th>name</th>
+                        <th>course</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr *ngFor='let student of students '>
+                        <td>{{ student.id }}</td>
+                        <td>{{ student.name }}</td>
+                        <td>{{ student.course }}</td>
+                    </tr>
+                </tbody>
+            </table>
+
+
+    </mdl-card-supporting-text>
+    <br><br>
+    <mdl-card-title mdl-card-expand>
+      <h2 mdl-card-title-text >أخر الدروس</h2>
+    </mdl-card-title>
+    <mdl-card-supporting-text mdl-card-border>
+      الحمد لله الذي بنعمته تتم الصالحات
+    </mdl-card-supporting-text>
+        <br><br>
+    <mdl-card-title mdl-card-expand>
+      <h2 mdl-card-title-text >أخر الدورات</h2>
+    </mdl-card-title>
+    <mdl-card-supporting-text mdl-card-border>
+      الحمد لله الذي بنعمته تتم الصالحات
+    </mdl-card-supporting-text>
+  </mdl-card>
+        
+        </div>
+</div>

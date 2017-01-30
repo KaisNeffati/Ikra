@@ -1,0 +1,22 @@
+[
+{
+"id": 2,
+"name": "Kais",
+"course": "Computer Science"
+},
+{
+"id": 3,
+"name": "Alex",
+"course": "Maths"
+},
+{
+"id": 4,
+"name": "Anna",
+"course": "Nothing"
+},
+{
+"id": 5,
+"name": "Peter",
+"course": "physics"
+}
+]

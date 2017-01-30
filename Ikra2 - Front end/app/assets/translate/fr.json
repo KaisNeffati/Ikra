@@ -1,0 +1,11 @@
+{
+  "MENU": {
+    "TITLE": "Lire et s'Elevé",
+    "Home": "Accueil",
+    "Courses": "Cours",
+    "Path": "Chemin",
+    "Events": "Événements",
+    "SignIn": "Se connecter",
+    "SignUp": "S'inscrire"
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "MENU": {
+    "TITLE": "Read and elevated",
+    "Home": "Home",
+    "Courses": "Courses",
+    "Path": "Path",
+    "Events": "Events",
+    "SignIn": "Sign in",
+    "SignUp": "Sign up"
+  }
+}
